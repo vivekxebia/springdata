@@ -1,0 +1,31 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Beer Selection Page :</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Beer Selection Form</h1>
+	<form action="#" th:action="@{/BeerSelection}" th:object="${beer}" method="post">
+		<p>
+			Select Color <select th:field="*{color}" size="1">
+				<option value="light">Light</option>
+				<option value="amber">Amber</option>
+				<option value="brown">Brown</option>
+				<option value="dark">Dark</option>
+			</select>
+		</p>
+		<p>
+			Select Price <select th:field="*{price}" size="1">
+				<option value="100">$100</option>
+				<option value="200">$200</option>
+				<option value="300">$300</option>
+				<option value="400">$400</option>
+			</select>
+		</p>
+		<p>
+			<input type="submit" value="Submit" /> <input type="reset"
+				value="Reset" />
+		</p>
+	</form>
+</body>
+</html>

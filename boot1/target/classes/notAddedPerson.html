@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+ <h1>ERROR in Adding Person Details :</h1>
+ 
+ <p th:text="'First Name :'+${nPerson.fName}"></p>
+ <p th:text="'Last Name :'+${nPerson.lName}"></p>
+ <p th:text="'Age :'+${nPerson.age}"></p>
+ 
+ 
+ <a href="/myform">Submit Another Choice</a>
+ 
+</body>
+</html>
